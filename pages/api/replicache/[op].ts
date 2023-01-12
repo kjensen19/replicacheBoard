@@ -11,7 +11,7 @@ import { mutators } from "../../../src/mutators";
 // The important thing to notice here is that we pass in `mutators` - our map
 // of Replicache mutator functions. These same functions are *also* used on the
 // client-side (see [id].tsx). The mutators are run on both the client and the
-// server as part of the sync protocol. See mutators.ts for more information.
+// server as part of the sync protocol. See mutators.ts for more information!
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   await handleRequest(req, res, mutators);
 };
